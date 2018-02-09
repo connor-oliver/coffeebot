@@ -13,7 +13,7 @@ import java.sql.SQLException;
 
 public class SlackBot {
     private static final String TOKEN = "";
-    private static final String CHANNEL = "general";
+    private static final String CHANNEL = "roll-up-the-rim";
     private static final String CMD_STRING = "!coffeebot %s";
     private static final String WIN_MESSAGE = "Hi %s, I've added a new win. \uD83D\uDE04";
     private static final String LOSS_MESSAGE = "Hi %s, I've added a new loss. \uD83D\uDE1E";

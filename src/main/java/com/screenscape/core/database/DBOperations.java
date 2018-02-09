@@ -67,7 +67,12 @@ public class DBOperations {
             psqls.setString(1, user);
 
             ResultSet results = psqls.executeQuery();
-            result = results.getInt("lastAdd") > 14;
+
+            if(results.next()) {
+                result = results.getInt("lastAdd") > 14;
+            } else {
+                result = true;
+            }
         } catch (SQLException e){
             e.printStackTrace();
         }
